@@ -1,2 +1,2 @@
-h1{color:red}
+.container{width:1366px;margin:0 auto}header{height:658px;background:url(/img/header-bg.jpg);color:#fff}header .logo,header .phone{font-family:Bebas Neue;font-size:26px;line-height:26px}header .city-name,header .fitness-name{font-family:Bebas Neue;font-size:49px;line-height:49px}header .fitness-name{font-size:109px;line-height:109px;text-align:right}header .header-list{text-align:right;list-style:none}header .header-list li,header .social-links{font-family:Roboto Condensed;font-size:14px;line-height:150%}header .social-links{font-size:12px;line-height:14px;text-align:right;text-transform:uppercase}
 /*# sourceMappingURL=style.min.css.map */
