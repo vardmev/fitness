@@ -18,7 +18,7 @@
   font-family: "Roboto Condensed";
   src: url("/fonts/Roboto-Condensed.woff") format("woff"),
        url("/fonts/Roboto-Condensed.woff2") format("woff2");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -34,7 +34,7 @@
   font-family: "Roboto Condensed";
   src: url("/fonts/RobotoCondensed-Bold.woff") format("woff"),
        url("/fonts/RobotoCondensed-Bold.woff2") format("woff2");
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -47,9 +47,30 @@
 header {
   height: 658px;
   background: url("/img/header-bg.jpg");
+  padding: 30px 103px;
 
 
   color: #FFFFFF;
+
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-main {
+    display: flex;
+    justify-content: flex-end;
+
+    .header-main--info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .header-image {
+      margin: 0 185px 0 65px;
+    }
+  }
 
 
   .logo,
@@ -63,32 +84,71 @@ header {
     font-family: Bebas Neue;
     font-size: 49px;
     line-height: 49px;
+    text-align: right;
   }
 
   .fitness-name {
     font-family: Bebas Neue;
     font-size: 109px;
     line-height: 109px;
+    font-weight: bold;
     text-align: right;
+
+    margin-top: 25px;
+    margin-bottom: 80px;
+    position: relative;
   }
 
   .header-list {
     text-align: right;
     list-style: none;
 
+    position: absolute;
+    bottom: 35px;
+    right: 245px;
+    margin: 0;
+    padding: 0;
+
     li {
       font-family: Roboto Condensed;
+      font-weight: 300;
       font-size: 14px;
       line-height: 150%;
     }
   }
+
+  .buy-button {
+    text-align: center;
+    button {
+      border: 4px solid #ffffff;
+      width: 230px;
+      height: 57px;
+      background: transparent;
+      font-family: Roboto Condensed;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 14px;
+      color: #ffffff;
+      text-transform: uppercase;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
   .social-links {
     font-family: Roboto Condensed;
     font-size: 12px;
     line-height: 14px;
-    // display: flex;
-    // align-items: center;
     text-align: right;
     text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 45px;
+  }
+  .social-link {
+    margin-bottom: 25px;
   }
 }
