@@ -1,39 +1,39 @@
 @font-face {
   font-family: "Bebas Neue";
-  src: url("/fonts/BebasNeue-Regular.woff") format("woff"),
-       url("/fonts/BebasNeue-Regular.woff2") format("woff2");
+  src: url("../fonts/BebasNeue-Regular.woff") format("woff"),
+       url("../fonts/BebasNeue-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Bebas Neue";
-  src: url("/fonts/BebasNeue-Bold.woff") format("woff"),
-       url("/fonts/BebasNeue-Bold.woff2") format("woff2");
+  src: url("../fonts/BebasNeue-Bold.woff") format("woff"),
+       url("../fonts/BebasNeue-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Roboto Condensed";
-  src: url("/fonts/Roboto-Condensed.woff") format("woff"),
-       url("/fonts/Roboto-Condensed.woff2") format("woff2");
+  src: url("../fonts/Roboto-Condensed.woff") format("woff"),
+       url("../fonts/Roboto-Condensed.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Roboto Condensed";
-  src: url("/fonts/RobotoCondensed-Light.woff") format("woff"),
-       url("/fonts/RobotoCondensed-Light.woff2") format("woff2");
+  src: url("../fonts/RobotoCondensed-Light.woff") format("woff"),
+       url("../fonts/RobotoCondensed-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Roboto Condensed";
-  src: url("/fonts/RobotoCondensed-Bold.woff") format("woff"),
-       url("/fonts/RobotoCondensed-Bold.woff2") format("woff2");
+  src: url("../fonts/RobotoCondensed-Bold.woff") format("woff"),
+       url("../fonts/RobotoCondensed-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
@@ -46,7 +46,7 @@
 
 header {
   height: 658px;
-  background: url("/img/header-bg.jpg");
+  background: url("../img/header-bg.jpg");
   padding: 30px 103px;
 
 
