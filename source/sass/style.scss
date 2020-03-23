@@ -207,8 +207,10 @@ header {
 
 .subscriptions {
   text-align: center;
-  background: #F8F9FC;
+  background-color: #F8F9FC;
   padding: 120px 103px;
+  position: relative;
+  z-index: 1;
 
   .section-header {
     margin-top: 0;
@@ -257,10 +259,12 @@ header {
 
   .option {
     width: 360px;
-    background: #ffffff;
+    background-color: #ffffff;
     text-align: center;
     padding: 68px 0;
     position: relative;
+    border: 7px solid transparent;
+    box-sizing: border-box;
 
     .option-name {
       font-family: "Roboto Condensed", sans-serif;
@@ -312,7 +316,8 @@ header {
         display: inline-block;
         border: 2px solid #102654;
         width: 206px;
-        height: 60px;
+        height: 64px;
+        box-sizing: border-box;
         background: transparent;
         font-family: Roboto Condensed;
         font-weight: bold;
@@ -329,32 +334,27 @@ header {
     }
 
     &.active {
-      /*border-width: 3px;
-      border-style: solid;
-      border-image:
-        linear-gradient(
-          to bottom,
-          red,
-          rgba(0, 0, 0, 0)
-        ) 1 100%;*/
-
       position: relative;
-      // box-sizing: border-box;
-      background-clip: padding-box; /* !importanté */
-      border: solid 5px transparent; /* !importanté  */
-      border-radius: 1em;
+      box-sizing: border-box;
+      background-color: #fff;
+      background-clip: padding-box;
 
       &:before {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         right: 0;
         bottom: 0;
         left: 0;
         z-index: -1;
-        margin: -5px; /* !importanté */
-        border-radius: inherit; /* !importanté */
-        background: linear-gradient(to right, red, orange);
+        margin: -7px;
+        background: linear-gradient(135deg, #D10A42, #00359F);
+      }
+
+      .buy-button a {
+        border: none;
+        color: #fff;
+        background: linear-gradient(to right, #D10A42, #00359F);
       }
     }
   }
