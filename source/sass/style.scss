@@ -363,3 +363,10 @@ header {
     }
   }
 }
+
+.disk-image-wrapper img{
+  position: absolute;
+  right: 0;
+  bottom: -150px;
+  z-index: -1;
+}
