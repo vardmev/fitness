@@ -254,8 +254,12 @@ header {
 }
 
 .tab-content {
-  display: flex;
   justify-content: space-between;
+  display: none;
+
+  &.active {
+    display: flex;
+  }
 
   .option {
     width: 360px;
