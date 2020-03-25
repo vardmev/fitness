@@ -18,3 +18,11 @@ if(tabLinks) {
     });
   });
 }
+
+//предотвращаем прыжки вверх страницы при клике по ссылке-заглушке
+document.querySelectorAll('a[href="#"]').forEach(function(el) {
+  el.addEventListener("click", function(event) {
+    event.preventDefault();
+    return false;
+  });
+});

@@ -80,6 +80,8 @@ header {
 
   .logo,
   .phone {
+    text-decoration: none;
+    color: #fff;
     font-family: Bebas Neue;
     font-size: 26px;
     line-height: 26px;
@@ -138,9 +140,15 @@ header {
       text-transform: uppercase;
       text-decoration: none;
       line-height: 58px;
+      position: relative;
 
       &:hover {
         cursor: pointer;
+        box-shadow: 0 0 2px 1px #fff;
+      }
+
+      &:active {
+        top: 1px;
       }
     }
   }
@@ -330,14 +338,21 @@ header {
         text-transform: uppercase;
         text-decoration: none;
         line-height: 60px;
+        position: relative;
 
         &:hover {
           cursor: pointer;
+          box-shadow: 0 0 2px 1px #102654;
+        }
+
+        &:active {
+          top: 1px;
         }
       }
     }
 
-    &.active {
+    &.active,
+    &:hover {
       position: relative;
       box-sizing: border-box;
       background-color: #fff;
@@ -368,7 +383,7 @@ header {
   position: absolute;
   right: 0;
   bottom: -150px;
-  z-index: -1;
+  z-index: -2;
 }
 
 .promo{
@@ -456,9 +471,15 @@ header {
       text-transform: uppercase;
       text-decoration: none;
       line-height: 60px;
+      position: relative;
 
       &:hover {
         cursor: pointer;
+        box-shadow: 0 0 2px 1px #ffffff;
+      }
+
+      &:active {
+        top: 1px;
       }
     }
   }
