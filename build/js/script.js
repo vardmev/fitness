@@ -26,3 +26,15 @@ document.querySelectorAll('a[href="#"]').forEach(function(el) {
     return false;
   });
 });
+
+var mySwiper = new Swiper ('.swiper-container', {
+  slidesPerView: 4,
+  spaceBetween: 40,
+  slidesPerGroup: 4,
+  loop: true,
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+})
