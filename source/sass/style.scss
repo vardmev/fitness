@@ -675,6 +675,7 @@ header {
     padding: 65px 34px;
     text-align: center;
     width: 240px;
+    flex-shrink: 0;
     box-sizing: border-box;
     margin: 0 60px;
     p {
@@ -684,14 +685,17 @@ header {
       font-family: Roboto Condensed;
       font-weight: bold;
       font-size: 74px;
-      line-height: 150%;
+      line-height: 100%;
     }
     .advantages-name {
       font-family: Roboto Condensed;
       font-style: normal;
       font-weight: bold;
       font-size: 26px;
-      line-height: 150%;
+      line-height: 100%;
+
+      margin-top: 10px;
+      margin-bottom: 40px;
     }
     .advantages-note {
       font-family: Roboto Condensed;
