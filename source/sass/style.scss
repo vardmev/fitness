@@ -504,12 +504,12 @@ header {
   text-align: left;
 }
 
-.swiper-container {
+.swiper-container.coaches-swiper {
   width: 1160px;
   padding: 0 40px;
   margin: 0 -40px;
 }
-.slide {
+.coaches-swiper .slide {
   position: relative;
   color: #fff;
   text-align: center;
@@ -811,4 +811,54 @@ p.stock-note {
     margin: -7px;
     background: linear-gradient(135deg, #D10A42, #00359F);
   }
+}
+
+.reviews {
+  margin: 120px 103px;
+  .section-header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+.reviews-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.reviews-swiper {
+  width: 560px;
+  padding: 0 75px;
+  margin: 0 -75px;
+}
+.review {
+  width: 560px;
+  height: 242px;
+  padding: 62px;
+  box-sizing: border-box;
+  background-color: #1C3374;
+  color: #fff;
+
+  display: flex;
+  justify-content: space-between;
+}
+.review-author-photo {
+  border-radius: 50%;
+}
+.review-content {
+  width: 330px;
+}
+.review-author {
+  font-family: Roboto Condensed;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 150%;
+
+  margin: 0 0 20px;
+}
+.review-text {
+  font-family: Roboto Condensed;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 140%;
+
+  margin: 0;
 }

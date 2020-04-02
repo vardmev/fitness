@@ -28,10 +28,20 @@ document.querySelectorAll('a[href="#"]').forEach(function(el) {
 });
 
 // слайдер для тренеров
-var mySwiper = new Swiper ('.swiper-container', {
+var mySwiper = new Swiper ('.swiper-container.coaches-swiper', {
   slidesPerView: 4,
   spaceBetween: 40,
   slidesPerGroup: 4,
+  loop: true,
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+// слайдер для отзывов
+var mySwiper = new Swiper ('.swiper-container.reviews-swiper', {
+  spaceBetween: 80,
   loop: true,
 
   navigation: {
