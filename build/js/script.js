@@ -27,6 +27,7 @@ document.querySelectorAll('a[href="#"]').forEach(function(el) {
   });
 });
 
+// слайдер для тренеров
 var mySwiper = new Swiper ('.swiper-container', {
   slidesPerView: 4,
   spaceBetween: 40,
@@ -37,4 +38,4 @@ var mySwiper = new Swiper ('.swiper-container', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-})
+});
