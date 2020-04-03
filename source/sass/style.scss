@@ -12,7 +12,7 @@ ul {
        url("../fonts/BebasNeue-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
 }
 
 @font-face {
@@ -21,7 +21,7 @@ ul {
        url("../fonts/BebasNeue-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
 }
 
 @font-face {
@@ -30,7 +30,7 @@ ul {
        url("../fonts/Roboto-Condensed.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
 }
 
 @font-face {
@@ -39,7 +39,7 @@ ul {
        url("../fonts/RobotoCondensed-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
 }
 
 @font-face {
@@ -48,7 +48,7 @@ ul {
        url("../fonts/RobotoCondensed-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
 }
 
 
@@ -976,4 +976,48 @@ p.stock-note {
 .contact-address,
 .contact-phone {
   margin-bottom: 25px;
+}
+
+footer {
+  background-color: #030A1A;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 40px 103px;
+
+  nav {
+    flex: 0 0 431px;
+
+    display: flex;
+    justify-content: space-between;
+    a {
+      color: #fff;
+      text-decoration: none;
+
+      font-family: Roboto Condensed;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+  .social-links {
+    display: flex;
+    align-items: center;
+  }
+  .social-link {
+    margin-right: 25px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .logo {
+    font-family: Bebas Neue;
+    font-size: 26px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+  }
 }
