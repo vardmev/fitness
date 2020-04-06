@@ -8,8 +8,8 @@ ul {
 
 @font-face {
   font-family: "Bebas Neue";
-  src: url("../fonts/BebasNeue-Regular.woff") format("woff"),
-       url("../fonts/BebasNeue-Regular.woff2") format("woff2");
+  src: url("../fonts/bebas-neue-regular.woff2") format("woff2"),
+       url("../fonts/bebas-neue-regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -17,8 +17,8 @@ ul {
 
 @font-face {
   font-family: "Bebas Neue";
-  src: url("../fonts/BebasNeue-Bold.woff") format("woff"),
-       url("../fonts/BebasNeue-Bold.woff2") format("woff2");
+  src: url("../fonts/bebas-neue-bold.woff2") format("woff2"),
+       url("../fonts/bebas-neue-bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -26,8 +26,8 @@ ul {
 
 @font-face {
   font-family: "Roboto Condensed";
-  src: url("../fonts/Roboto-Condensed.woff") format("woff"),
-       url("../fonts/Roboto-Condensed.woff2") format("woff2");
+  src: url("../fonts/roboto-condensed.woff2") format("woff2"),
+       url("../fonts/roboto-condensed.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -35,8 +35,8 @@ ul {
 
 @font-face {
   font-family: "Roboto Condensed";
-  src: url("../fonts/RobotoCondensed-Light.woff") format("woff"),
-       url("../fonts/RobotoCondensed-Light.woff2") format("woff2");
+  src: url("../fonts/roboto-condensed-light.woff2") format("woff2"),
+       url("../fonts/roboto-condensed-light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -44,8 +44,8 @@ ul {
 
 @font-face {
   font-family: "Roboto Condensed";
-  src: url("../fonts/RobotoCondensed-Bold.woff") format("woff"),
-       url("../fonts/RobotoCondensed-Bold.woff2") format("woff2");
+  src: url("../fonts/roboto-condensed-bold.woff2") format("woff2"),
+       url("../fonts/roboto-condensed-bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -89,20 +89,20 @@ header {
   .phone {
     text-decoration: none;
     color: #fff;
-    font-family: Bebas Neue;
+    font-family: "Bebas Neue", sans-serif;
     font-size: 26px;
     line-height: 26px;
   }
 
   .city-name {
-    font-family: Bebas Neue;
+    font-family: "Bebas Neue", sans-serif;
     font-size: 49px;
     line-height: 49px;
     text-align: right;
   }
 
   .fitness-name {
-    font-family: Bebas Neue;
+    font-family: "Bebas Neue", sans-serif;
     font-size: 109px;
     line-height: 109px;
     font-weight: bold;
@@ -124,7 +124,7 @@ header {
     padding: 0;
 
     li {
-      font-family: Roboto Condensed;
+      font-family: "Roboto Condensed", sans-serif;
       font-weight: 300;
       font-size: 14px;
       line-height: 150%;
@@ -139,7 +139,7 @@ header {
       width: 230px;
       height: 57px;
       background: transparent;
-      font-family: Roboto Condensed;
+      font-family: "Roboto Condensed", sans-serif;
       font-weight: bold;
       font-size: 12px;
       line-height: 14px;
@@ -161,7 +161,7 @@ header {
   }
 
   .social-links {
-    font-family: Roboto Condensed;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 12px;
     line-height: 14px;
     text-align: right;
@@ -193,7 +193,7 @@ header {
   }
 
   .gym-text .note {
-    font-family: Roboto Condensed;
+    font-family: "Roboto Condensed", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -220,7 +220,7 @@ header {
   }
 }
 .section-header {
-  font-family: Bebas Neue;
+  font-family: "Bebas Neue", sans-serif;
   font-weight: 700;
   font-size: 49px;
   line-height: 49px;
@@ -346,7 +346,7 @@ header {
         height: 64px;
         box-sizing: border-box;
         background: transparent;
-        font-family: Roboto Condensed;
+        font-family: "Roboto Condensed", sans-serif;
         font-weight: bold;
         font-size: 12px;
         color: #102654;
@@ -507,7 +507,7 @@ header {
 }
 
 .coaches-header {
-  font-family: Bebas Neue;
+  font-family: "Bebas Neue", sans-serif;
   font-weight: 700;
   font-size: 49px;
   line-height: 49px;
@@ -655,14 +655,14 @@ header {
   }
 
   .unit-name {
-    font-family: Roboto Condensed;
+    font-family: "Roboto Condensed", sans-serif;
     font-weight: 300;
     font-size: 14px;
     color: #2E35AC;
   }
 
   .advantages-name {
-    font-family: Roboto Condensed;
+    font-family: "Roboto Condensed", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 22px;
@@ -674,7 +674,7 @@ header {
   }
 
   .advantages-note  {
-    font-family: Roboto Condensed;
+    font-family: "Roboto Condensed", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
@@ -695,13 +695,13 @@ header {
       color: #fff;
     }
     .advantages-number {
-      font-family: Roboto Condensed;
+      font-family: "Roboto Condensed", sans-serif;
       font-weight: bold;
       font-size: 74px;
       line-height: 100%;
     }
     .advantages-name {
-      font-family: Roboto Condensed;
+      font-family: "Roboto Condensed", sans-serif;
       font-style: normal;
       font-weight: bold;
       font-size: 26px;
@@ -711,7 +711,7 @@ header {
       margin-bottom: 40px;
     }
     .advantages-note {
-      font-family: Roboto Condensed;
+      font-family: "Roboto Condensed", sans-serif;
       font-style: normal;
       font-weight: 300;
       font-size: 16px;
@@ -769,7 +769,7 @@ header {
   }
 }
 p.stock-header {
-  font-family: Roboto Condensed;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
   font-size: 26px;
 
@@ -784,14 +784,14 @@ p.stock-header {
   margin-bottom: 10px;
 }
 p.stock-note {
-  font-family: Roboto Condensed;
+  font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 140%;
 }
 .more-link {
-  font-family: Roboto Condensed;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
   font-size: 12px;
   line-height: 14px;
@@ -860,7 +860,7 @@ p.stock-note {
   width: 330px;
 }
 .review-author {
-  font-family: Roboto Condensed;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
   font-size: 20px;
   line-height: 150%;
@@ -868,7 +868,7 @@ p.stock-note {
   margin: 0 0 20px;
 }
 .review-text {
-  font-family: Roboto Condensed;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 140%;
@@ -904,7 +904,7 @@ p.stock-note {
 .form-input {
   flex: 0 0 190px;
 
-  font-family: Roboto Condensed;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 16px;
@@ -929,7 +929,7 @@ p.stock-note {
   padding: 15px 0;
   margin-top: 30px;
 
-  font-family: Roboto Condensed;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -953,7 +953,7 @@ p.stock-note {
 }
 
 .contact-header {
-  font-family: Roboto Condensed;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 150%;
@@ -963,7 +963,7 @@ p.stock-note {
 }
 
 .contact-text {
-  font-family: Roboto Condensed;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 21px;
@@ -1009,7 +1009,7 @@ footer {
       color: #fff;
       text-decoration: none;
 
-      font-family: Roboto Condensed;
+      font-family: "Roboto Condensed", sans-serif;
       font-weight: 300;
       font-size: 14px;
       line-height: 16px;
@@ -1026,7 +1026,7 @@ footer {
     }
   }
   .logo {
-    font-family: Bebas Neue;
+    font-family: "Bebas Neue", sans-serif;
     font-size: 26px;
     line-height: 26px;
     letter-spacing: 0.02em;
