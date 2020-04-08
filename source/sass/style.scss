@@ -1,5 +1,9 @@
 @import 'swiper.min';
 
+body {
+  margin: 0;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -85,13 +89,18 @@ header {
   }
 
 
-  .logo,
+  .header-company-name,
   .phone {
     text-decoration: none;
     color: #fff;
     font-family: "Bebas Neue", sans-serif;
     font-size: 26px;
     line-height: 26px;
+    vertical-align: baseline;
+  }
+
+  .phone:hover {
+    text-decoration: underline;
   }
 
   .city-name {
@@ -148,6 +157,7 @@ header {
       text-decoration: none;
       line-height: 58px;
       position: relative;
+      vertical-align: baseline;
 
       &:hover {
         cursor: pointer;
@@ -174,6 +184,7 @@ header {
   .social-link {
     margin-bottom: 25px;
     text-decoration: none;
+    vertical-align: baseline;
 
     color: #fff;
 
@@ -182,6 +193,7 @@ header {
     }
   }
 }
+
 .gym {
   display: flex;
   justify-content: space-between;
@@ -354,6 +366,7 @@ header {
         text-decoration: none;
         line-height: 60px;
         position: relative;
+        vertical-align: baseline;
 
         &:hover {
           cursor: pointer;
@@ -488,6 +501,7 @@ header {
       text-decoration: none;
       line-height: 60px;
       position: relative;
+      vertical-align: baseline;
 
       &:hover {
         cursor: pointer;
@@ -777,6 +791,7 @@ p.stock-header {
 
   span {
     font-size: 70px;
+    vertical-align: baseline;
   }
 }
 .stock-header_bigger {
@@ -939,6 +954,8 @@ p.stock-note {
   background-color: transparent;
 
   color: #FFFFFF;
+
+  cursor: pointer;
 }
 
 .contact-info {
@@ -970,8 +987,10 @@ p.stock-note {
 
   color: #102654;
   margin: 0;
-
+}
+a.contact-text {
   text-decoration: none;
+  vertical-align: baseline;
   &:hover {
     text-decoration: underline;
   }
@@ -1008,11 +1027,15 @@ footer {
     a {
       color: #fff;
       text-decoration: none;
+      vertical-align: baseline;
 
       font-family: "Roboto Condensed", sans-serif;
       font-weight: 300;
       font-size: 14px;
       line-height: 16px;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
   .social-links {

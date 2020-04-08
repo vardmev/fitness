@@ -12,7 +12,7 @@
   <div class="container">
     <header>
       <div class="header-top">
-        <span class="logo">SUPERGYM</span>
+        <span class="header-company-name">SUPERGYM</span>
         <a href="tel:88005555555" class="phone">8-800-555-55-55</a>
       </div>
 
@@ -455,8 +455,8 @@
         <h2 class="section-header">Бесплатное занятие</h2>
         <form>
           <div class="form-row">
-            <input type="text" name="name" class="form-input" placeholder="Имя">
-            <input type="tel" name="phone" class="form-input" placeholder="Телефон">
+            <input type="text" name="name" class="form-input" placeholder="Имя" required>
+            <input type="tel" name="phone" class="form-input" placeholder="Телефон" required pattern="\d+">
           </div>
           <button type="submit" class="form-submit">Отправить</button>
         </form>
