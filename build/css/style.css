@@ -611,15 +611,23 @@ ul {
             justify-content: center; }
   .header .header-image {
     margin: 0 185px 0 65px; }
-  .header .header-company-name,
+  .header .header-company-name {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 26px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    vertical-align: baseline; }
   .header .header-phone {
     text-decoration: none;
     color: #fff;
     font-family: "Bebas Neue", sans-serif;
     font-size: 26px;
     line-height: 26px;
+    letter-spacing: 0.03em;
     vertical-align: baseline; }
-  .header .phone:hover {
+  .header .header-phone:hover {
     text-decoration: underline; }
   .header .city-name {
     font-family: "Bebas Neue", sans-serif;
