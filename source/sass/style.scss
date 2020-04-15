@@ -55,6 +55,10 @@ ul {
   font-display: swap;
 }
 
+.link:hover,
+.btn:hover {
+  cursor: pointer;
+}
 
 .container {
   width: 1366px;
@@ -177,6 +181,7 @@ ul {
     &:hover {
       cursor: pointer;
       box-shadow: 0 0 2px 1px #fff;
+      top: 1px;
     }
 
     &:active {
@@ -385,6 +390,7 @@ ul {
         &:hover {
           cursor: pointer;
           box-shadow: 0 0 2px 1px #102654;
+          top: 1px;
         }
 
         &:active {
@@ -520,6 +526,7 @@ ul {
       &:hover {
         cursor: pointer;
         box-shadow: 0 0 2px 1px #ffffff;
+        top: 1px;
       }
 
       &:active {
@@ -969,7 +976,12 @@ p.stock-note {
 
   color: #FFFFFF;
 
+  position: relative;
   cursor: pointer;
+  &:hover,
+  &:active {
+    top: 1px;
+  }
 }
 
 .contact-info {

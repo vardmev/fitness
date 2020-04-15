@@ -576,6 +576,10 @@ ul {
   font-style: normal;
   font-display: swap; }
 
+.link:hover,
+.btn:hover {
+  cursor: pointer; }
+
 .container {
   width: 1366px;
   margin: 0 auto; }
@@ -681,7 +685,8 @@ ul {
     .header .buy-button:hover {
       cursor: pointer;
       -webkit-box-shadow: 0 0 2px 1px #fff;
-              box-shadow: 0 0 2px 1px #fff; }
+              box-shadow: 0 0 2px 1px #fff;
+      top: 1px; }
     .header .buy-button:active {
       top: 1px; }
   .header .social-links {
@@ -865,7 +870,8 @@ ul {
         .tab-content .option .buy-button a:hover {
           cursor: pointer;
           -webkit-box-shadow: 0 0 2px 1px #102654;
-                  box-shadow: 0 0 2px 1px #102654; }
+                  box-shadow: 0 0 2px 1px #102654;
+          top: 1px; }
         .tab-content .option .buy-button a:active {
           top: 1px; }
     .tab-content .option.active, .tab-content .option:hover {
@@ -990,7 +996,8 @@ ul {
       .promo .buy-button a:hover {
         cursor: pointer;
         -webkit-box-shadow: 0 0 2px 1px #ffffff;
-                box-shadow: 0 0 2px 1px #ffffff; }
+                box-shadow: 0 0 2px 1px #ffffff;
+        top: 1px; }
       .promo .buy-button a:active {
         top: 1px; }
 
@@ -1396,7 +1403,10 @@ p.stock-note {
   text-transform: uppercase;
   background-color: transparent;
   color: #FFFFFF;
+  position: relative;
   cursor: pointer; }
+  .form-submit:hover, .form-submit:active {
+    top: 1px; }
 
 .contact-info {
   -webkit-box-flex: 0;
