@@ -1380,6 +1380,9 @@ p.stock-note {
   border-bottom: 1px solid #74819C;
   background-color: transparent;
   padding-bottom: 5px; }
+  .form-input:hover {
+    border-bottom: 3px solid #74819C;
+    padding-bottom: 3px; }
   .form-input::-webkit-input-placeholder {
     color: #fff; }
   .form-input::-moz-placeholder {

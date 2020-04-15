@@ -954,6 +954,11 @@ p.stock-note {
   background-color: transparent;
   padding-bottom: 5px;
 
+  &:hover {
+    border-bottom: 3px solid #74819C;
+    padding-bottom: 3px;
+  }
+
   &::placeholder {
     color: #fff;
   }
