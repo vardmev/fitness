@@ -66,7 +66,11 @@ ul {
 }
 
 .header {
-  background: url("../img/header-bg.jpg") no-repeat;
+  background: url("../img/header-bg.jpg") no-repeat 50% 0;
+  background: conic-gradient(from 250deg at 16.03% 39.06%, #003D85, #B80027, #003D85);
+}
+
+.header-wrapper {
   padding: 30px 103px 50px;
 
 
@@ -1043,6 +1047,8 @@ a.contact-text {
 
 footer {
   background-color: #030A1A;
+}
+.footer-wrapper {
   color: #fff;
   display: flex;
   justify-content: space-between;
