@@ -534,7 +534,8 @@ button.swiper-pagination-bullet {
   -ms-perspective: 1200px; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  overflow-x: hidden; }
 
 ul {
   margin: 0;
@@ -901,7 +902,7 @@ ul {
 
 .disk-image-wrapper img {
   position: absolute;
-  right: 0;
+  right: -183px;
   bottom: -150px;
   z-index: -2; }
 

@@ -2,6 +2,7 @@
 
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 ul {
@@ -433,7 +434,7 @@ ul {
 
 .disk-image-wrapper img{
   position: absolute;
-  right: 0;
+  right: -183px;
   bottom: -150px;
   z-index: -2;
 }
