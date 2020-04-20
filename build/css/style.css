@@ -618,6 +618,9 @@ ul {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 400px;
+            flex: 0 0 400px;
     padding-bottom: 43px; }
   .header-wrapper .header-image {
     margin: 0 185px 0 65px; }
