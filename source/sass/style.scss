@@ -651,6 +651,12 @@ ul {
 
   }
 
+  .advantages-left-block,
+  .advantages-right-block {
+    width: 340px;
+    flex-shrink: 0;
+  }
+
   .advantages-left-top,
   .advantages-left-bottom,
   .advantages-right-top,
@@ -660,17 +666,24 @@ ul {
 
   }
 
-  .advantages-right-top,
+  .advantages-right-top {
+    padding-bottom: 80px;
+    border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+  }
+
   .advantages-left-top {
     padding-bottom: 80px;
     padding-left: 25px;
     border-bottom: 2px solid rgba(209, 10, 66, 0.2);
   }
 
-  .advantages-left-bottom,
   .advantages-right-bottom {
     padding-top: 80px;
-    padding-left: 25px;
+  }
+
+  .advantages-left-bottom {
+    padding-top: 80px;
+    padding-left: 20px;
   }
 
   .advantages-left-top-right,

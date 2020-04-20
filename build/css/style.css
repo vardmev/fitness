@@ -1096,6 +1096,11 @@ ul {
             justify-content: space-between;
     margin-top: 80px;
     text-align: left; }
+  .advantages .advantages-left-block,
+  .advantages .advantages-right-block {
+    width: 340px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0; }
   .advantages .advantages-left-top,
   .advantages .advantages-left-bottom,
   .advantages .advantages-right-top,
@@ -1106,15 +1111,18 @@ ul {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-  .advantages .advantages-right-top,
+  .advantages .advantages-right-top {
+    padding-bottom: 80px;
+    border-bottom: 2px solid rgba(209, 10, 66, 0.2); }
   .advantages .advantages-left-top {
     padding-bottom: 80px;
     padding-left: 25px;
     border-bottom: 2px solid rgba(209, 10, 66, 0.2); }
-  .advantages .advantages-left-bottom,
   .advantages .advantages-right-bottom {
+    padding-top: 80px; }
+  .advantages .advantages-left-bottom {
     padding-top: 80px;
-    padding-left: 25px; }
+    padding-left: 20px; }
   .advantages .advantages-left-top-right,
   .advantages .advantages-left-bottom-right,
   .advantages .advantages-right-top-right,
