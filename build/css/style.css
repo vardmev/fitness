@@ -789,16 +789,17 @@ ul {
     padding-left: 0; }
   .tab-link:last-child {
     padding-right: 0; }
-  .tab-link.active {
-    color: #102654; }
-    .tab-link.active span {
-      border-bottom: 2px solid #D10A42; }
   .tab-link span {
     padding-bottom: 20px;
     display: inline-block;
     margin-bottom: -2px; }
     .tab-link span:hover {
       cursor: pointer; }
+
+.active-tab {
+  color: #102654; }
+  .active-tab span {
+    border-bottom: 2px solid #D10A42; }
 
 .tab-content {
   -webkit-box-pack: justify;
@@ -809,71 +810,6 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-  .tab-content .option {
-    width: 360px;
-    background-color: #ffffff;
-    text-align: center;
-    padding: 68px 0;
-    position: relative;
-    border: 7px solid transparent;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box; }
-    .tab-content .option.active, .tab-content .option:hover {
-      position: relative;
-      -webkit-box-sizing: border-box;
-              box-sizing: border-box;
-      background-color: #fff;
-      background-clip: padding-box; }
-      .tab-content .option.active:before, .tab-content .option:hover:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: -1;
-        margin: -7px;
-        background: linear-gradient(135deg, #D10A42, #00359F); }
-      .tab-content .option.active .buy-button, .tab-content .option:hover .buy-button {
-        border: none;
-        color: #fff;
-        background: -webkit-gradient(linear, left top, right top, from(#D10A42), to(#00359F));
-        background: linear-gradient(to right, #D10A42, #00359F); }
-  .tab-content .option-name {
-    font-family: "Roboto Condensed", sans-serif;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 29px;
-    color: #102654;
-    margin-bottom: 10px;
-    margin-top: 0; }
-  .tab-content .option-note {
-    font-family: "Roboto Condensed", sans-serif;
-    font-size: 16px;
-    line-height: 150%;
-    color: #495A7D;
-    margin: 10px 0; }
-  .tab-content .option-price-bg {
-    font-family: "Roboto Condensed", sans-serif;
-    font-weight: bold;
-    font-size: 100px;
-    line-height: 150%;
-    color: #E8E8E8;
-    opacity: 0.48;
-    margin: 10px 0 30px; }
-  .tab-content .option-price {
-    font-family: "Roboto Condensed", sans-serif;
-    font-weight: bold;
-    font-size: 60px;
-    line-height: 150%;
-    color: #103AAE;
-    position: absolute;
-    width: 100%;
-    top: 195px;
-    margin: 0; }
-  .tab-content .ruble {
-    color: #102654;
-    font-weight: 400; }
   .tab-content .buy-button {
     border: 2px solid #102654;
     width: 206px;
@@ -900,6 +836,77 @@ ul {
       top: 1px; }
     .tab-content .buy-button:active {
       top: 1px; }
+
+.option {
+  width: 360px;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 68px 0;
+  position: relative;
+  border: 7px solid transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .option.active, .option:hover {
+    position: relative;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background-color: #fff;
+    background-clip: padding-box; }
+    .option.active:before, .option:hover:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      margin: -7px;
+      background: linear-gradient(135deg, #D10A42, #00359F); }
+    .option.active .buy-button, .option:hover .buy-button {
+      border: none;
+      color: #fff;
+      background: -webkit-gradient(linear, left top, right top, from(#D10A42), to(#00359F));
+      background: linear-gradient(to right, #D10A42, #00359F); }
+
+.option-name {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 29px;
+  color: #102654;
+  margin-bottom: 10px;
+  margin-top: 0; }
+
+.option-note {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  color: #495A7D;
+  margin: 10px 0; }
+
+.option-price-bg {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 150%;
+  color: #E8E8E8;
+  opacity: 0.48;
+  margin: 10px 0 30px; }
+
+.option-price {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 150%;
+  color: #103AAE;
+  position: absolute;
+  width: 100%;
+  top: 195px;
+  margin: 0; }
+
+.ruble {
+  color: #102654;
+  font-weight: 400; }
 
 .disk-image-wrapper img {
   position: absolute;
@@ -1016,38 +1023,38 @@ ul {
   color: #102654;
   text-align: left; }
 
-.swiper-container.coaches-swiper {
+.coaches-swiper {
   width: 1160px;
   padding: 0 40px;
   margin: 0 -40px; }
 
-.coaches-swiper .slide {
+.coach-slide {
   position: relative;
   color: #fff;
   text-align: center; }
-  .coaches-swiper .slide p {
+  .coach-slide p {
     margin: 0; }
-  .coaches-swiper .slide li {
+  .coach-slide li {
     text-align: left; }
-  .coaches-swiper .slide:hover .slide-coach-name {
+  .coach-slide:hover .slide-coach-name {
     display: none; }
-  .coaches-swiper .slide:hover .slide-coach-info {
+  .coach-slide:hover .slide-coach-info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-  .coaches-swiper .slide .slide-coach-name {
+  .coach-slide .slide-coach-name {
     position: absolute;
     bottom: 30px;
     width: 100%;
     text-align: center; }
-  .coaches-swiper .slide .coach-name {
+  .coach-slide .coach-name {
     font-family: "Roboto Condensed", sans-serif;
     font-weight: bold;
     font-size: 18px;
     line-height: 150%; }
-  .coaches-swiper .slide .slide-coach-info {
+  .coach-slide .slide-coach-info {
     display: none; }
-  .coaches-swiper .slide .coach-info {
+  .coach-slide .coach-info {
     position: absolute;
     top: 0;
     left: 0;
@@ -1062,14 +1069,14 @@ ul {
             justify-content: space-between;
     padding: 50px 55px;
     background-color: rgba(16, 38, 84, 0.89); }
-  .coaches-swiper .slide .coach-specialization {
+  .coach-slide .coach-specialization {
     font-family: "Roboto Condensed", sans-serif;
     font-size: 16px;
     font-weight: 300;
     line-height: 150%;
     color: #B6BDCC;
     margin-bottom: 35px; }
-  .coaches-swiper .slide .achievement-item {
+  .coach-slide .achievement-item {
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 300;
     font-size: 14px;
@@ -1161,37 +1168,39 @@ ul {
     font-size: 16px;
     line-height: 140%;
     color: #102654; }
-  .advantages .advantages-central-block {
-    background-color: #1C3374;
-    padding: 65px 34px;
-    text-align: center;
-    width: 240px;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    margin: 0 60px; }
-    .advantages .advantages-central-block p {
-      color: #fff; }
-    .advantages .advantages-central-block .advantages-number {
-      font-family: "Roboto Condensed", sans-serif;
-      font-weight: bold;
-      font-size: 74px;
-      line-height: 100%; }
-    .advantages .advantages-central-block .advantages-name {
-      font-family: "Roboto Condensed", sans-serif;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 26px;
-      line-height: 100%;
-      margin-top: 10px;
-      margin-bottom: 40px; }
-    .advantages .advantages-central-block .advantages-note {
-      font-family: "Roboto Condensed", sans-serif;
-      font-style: normal;
-      font-weight: 300;
-      font-size: 16px;
-      line-height: 150%; }
+
+.advantages-central-block {
+  background-color: #1C3374;
+  padding: 65px 34px;
+  text-align: center;
+  width: 240px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 60px; }
+  .advantages-central-block .advantages-number {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: bold;
+    font-size: 74px;
+    line-height: 100%;
+    color: #fff; }
+  .advantages-central-block .advantages-name {
+    font-family: "Roboto Condensed", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 100%;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 40px; }
+  .advantages-central-block .advantages-note {
+    font-family: "Roboto Condensed", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    color: #fff; }
 
 .stocks {
   margin: 120px 103px; }
@@ -1245,12 +1254,12 @@ ul {
   .secondary-stock p {
     color: #1C3374; }
 
-p.stock-header {
+.stock-header {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
   font-size: 26px;
   margin-bottom: 20px; }
-  p.stock-header span {
+  .stock-header span {
     font-size: 70px;
     vertical-align: baseline; }
 
@@ -1258,7 +1267,7 @@ p.stock-header {
   font-size: 28px;
   margin-bottom: 10px; }
 
-p.stock-note {
+.stock-note {
   font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
   font-weight: 300;

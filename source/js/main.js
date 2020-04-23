@@ -10,8 +10,8 @@ if(tabLinks) {
       var id = link.getAttribute("id").slice(-1);
       var content = document.querySelector("#tab-content-"+id);
 
-      document.querySelector(".tab-link.active").classList.remove("active");
-      link.classList.add("active");
+      document.querySelector(".tab-link.active-tab").classList.remove("active-tab");
+      link.classList.add("active-tab");
 
       document.querySelector(".tab-content.active").classList.remove("active");
       content.classList.add("active");

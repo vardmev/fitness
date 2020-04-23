@@ -295,12 +295,6 @@ ul {
   &:last-child {
     padding-right: 0;
   }
-  &.active {
-    color: #102654;
-    span {
-      border-bottom: 2px solid #D10A42;
-    }
-  }
   span {
     padding-bottom: 20px;
     display: inline-block;
@@ -308,6 +302,12 @@ ul {
     &:hover{
       cursor: pointer;
     }
+  }
+}
+.active-tab {
+  color: #102654;
+  span {
+    border-bottom: 2px solid #D10A42;
   }
 }
 
@@ -318,86 +318,6 @@ ul {
   &.active {
     display: flex;
   }
-
-  .option {
-    width: 360px;
-    background-color: #ffffff;
-    text-align: center;
-    padding: 68px 0;
-    position: relative;
-    border: 7px solid transparent;
-    box-sizing: border-box;
-
-    &.active,
-    &:hover {
-      position: relative;
-      box-sizing: border-box;
-      background-color: #fff;
-      background-clip: padding-box;
-
-      &:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: -1;
-        margin: -7px;
-        background: linear-gradient(135deg, #D10A42, #00359F);
-      }
-
-      .buy-button {
-        border: none;
-        color: #fff;
-        background: linear-gradient(to right, #D10A42, #00359F);
-      }
-    }
-  }
-  .option-name {
-    font-family: "Roboto Condensed", sans-serif;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 29px;
-    color: #102654;
-    margin-bottom: 10px;
-    margin-top: 0;
-  }
-
-  .option-note {
-    font-family: "Roboto Condensed", sans-serif;
-    font-size: 16px;
-    line-height: 150%;
-    color: #495A7D;
-    margin: 10px 0;
-  }
-  .option-price-bg {
-    font-family: "Roboto Condensed", sans-serif;
-    font-weight: bold;
-    font-size: 100px;
-    line-height: 150%;
-    color: #E8E8E8;
-    opacity: 0.48;
-    margin: 10px 0 30px;
-  }
-
-  .option-price{
-    font-family: "Roboto Condensed", sans-serif;
-    font-weight: bold;
-    font-size: 60px;
-    line-height: 150%;
-    color: #103AAE;
-    position: absolute;
-    width: 100%;
-    top: 195px;
-    margin: 0;
-  }
-
-  .ruble {
-    color: #102654;
-    font-weight: 400;
-  }
-
   .buy-button {
     border: 2px solid #102654;
     width: 206px;
@@ -430,6 +350,84 @@ ul {
       top: 1px;
     }
   }
+}
+.option {
+  width: 360px;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 68px 0;
+  position: relative;
+  border: 7px solid transparent;
+  box-sizing: border-box;
+
+  &.active,
+  &:hover {
+    position: relative;
+    box-sizing: border-box;
+    background-color: #fff;
+    background-clip: padding-box;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      margin: -7px;
+      background: linear-gradient(135deg, #D10A42, #00359F);
+    }
+
+    .buy-button {
+      border: none;
+      color: #fff;
+      background: linear-gradient(to right, #D10A42, #00359F);
+    }
+  }
+}
+.option-name {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 29px;
+  color: #102654;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.option-note {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  color: #495A7D;
+  margin: 10px 0;
+}
+.option-price-bg {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 150%;
+  color: #E8E8E8;
+  opacity: 0.48;
+  margin: 10px 0 30px;
+}
+
+.option-price{
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 150%;
+  color: #103AAE;
+  position: absolute;
+  width: 100%;
+  top: 195px;
+  margin: 0;
+}
+
+.ruble {
+  color: #102654;
+  font-weight: 400;
 }
 
 .disk-image-wrapper img{
@@ -558,13 +556,13 @@ ul {
   text-align: left;
 }
 
-.swiper-container.coaches-swiper {
+.coaches-swiper {
   width: 1160px;
   padding: 0 40px;
   margin: 0 -40px;
 }
 
-.coaches-swiper .slide {
+.coach-slide {
   position: relative;
   color: #fff;
   text-align: center;
@@ -737,41 +735,42 @@ ul {
 
     color: #102654;
   }
+}
 
-  .advantages-central-block {
-    background-color: #1C3374;
-    padding: 65px 34px;
-    text-align: center;
-    width: 240px;
-    flex-shrink: 0;
-    box-sizing: border-box;
-    margin: 0 60px;
-    p {
-      color: #fff;
-    }
-    .advantages-number {
-      font-family: "Roboto Condensed", sans-serif;
-      font-weight: bold;
-      font-size: 74px;
-      line-height: 100%;
-    }
-    .advantages-name {
-      font-family: "Roboto Condensed", sans-serif;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 26px;
-      line-height: 100%;
+.advantages-central-block {
+  background-color: #1C3374;
+  padding: 65px 34px;
+  text-align: center;
+  width: 240px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  margin: 0 60px;
 
-      margin-top: 10px;
-      margin-bottom: 40px;
-    }
-    .advantages-note {
-      font-family: "Roboto Condensed", sans-serif;
-      font-style: normal;
-      font-weight: 300;
-      font-size: 16px;
-      line-height: 150%;
-    }
+  .advantages-number {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: bold;
+    font-size: 74px;
+    line-height: 100%;
+    color: #fff;
+  }
+  .advantages-name {
+    font-family: "Roboto Condensed", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 100%;
+    color: #fff;
+
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+  .advantages-note {
+    font-family: "Roboto Condensed", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    color: #fff;
   }
 }
 
@@ -823,7 +822,7 @@ ul {
     color: #1C3374;
   }
 }
-p.stock-header {
+.stock-header {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
   font-size: 26px;
@@ -839,7 +838,7 @@ p.stock-header {
   font-size: 28px;
   margin-bottom: 10px;
 }
-p.stock-note {
+.stock-note {
   font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
   font-weight: 300;
