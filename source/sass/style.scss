@@ -872,6 +872,10 @@ ul {
 
   position: absolute;
   bottom: 25px;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .more-link-bigger {
@@ -1106,13 +1110,16 @@ ul {
       margin-right: 0;
     }
   }
-  .logo {
+  .footer-company-name {
     font-family: "Bebas Neue", Arial, sans-serif;
     font-size: 26px;
     line-height: 26px;
     letter-spacing: 0.02em;
 
     color: #FFFFFF;
+  }
+  .social-logo:hover {
+    opacity: 0.5;
   }
 }
 
