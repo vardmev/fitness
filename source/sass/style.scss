@@ -202,7 +202,6 @@ ul {
     &:hover {
       cursor: pointer;
       box-shadow: 0 0 2px 1px #fff;
-      top: 1px;
     }
 
     &:active {
@@ -361,7 +360,6 @@ ul {
     &:hover {
       cursor: pointer;
       box-shadow: 0 0 2px 1px #102654;
-      top: 1px;
     }
 
     &:active {
@@ -548,8 +546,7 @@ ul {
 
     &:hover {
       cursor: pointer;
-      box-shadow: 0 0 2px 1px #ffffff;
-      top: 1px;
+      box-shadow: 0 0 2px 1px #fff;
     }
 
     &:active {
@@ -953,7 +950,6 @@ ul {
 }
 
 .contacts {
-  // background-color: #102654;
   background: linear-gradient(to right, #102654 50%, #fff 50%);
   border-top: 1px solid #74819C;
 }
@@ -1031,7 +1027,7 @@ ul {
   cursor: pointer;
   &:hover,
   &:active {
-    top: 1px;
+    box-shadow: 0 0 2px 1px #fff;
   }
 }
 

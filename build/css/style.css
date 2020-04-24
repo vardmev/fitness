@@ -711,8 +711,7 @@ ul {
     .header-wrapper .buy-button:hover {
       cursor: pointer;
       -webkit-box-shadow: 0 0 2px 1px #fff;
-              box-shadow: 0 0 2px 1px #fff;
-      top: 1px; }
+              box-shadow: 0 0 2px 1px #fff; }
     .header-wrapper .buy-button:active {
       top: 1px; }
   .header-wrapper .social-links {
@@ -853,8 +852,7 @@ ul {
     .tab-content .buy-button:hover {
       cursor: pointer;
       -webkit-box-shadow: 0 0 2px 1px #102654;
-              box-shadow: 0 0 2px 1px #102654;
-      top: 1px; }
+              box-shadow: 0 0 2px 1px #102654; }
     .tab-content .buy-button:active {
       top: 1px; }
 
@@ -1027,9 +1025,8 @@ ul {
     vertical-align: baseline; }
     .promo .buy-button:hover {
       cursor: pointer;
-      -webkit-box-shadow: 0 0 2px 1px #ffffff;
-              box-shadow: 0 0 2px 1px #ffffff;
-      top: 1px; }
+      -webkit-box-shadow: 0 0 2px 1px #fff;
+              box-shadow: 0 0 2px 1px #fff; }
     .promo .buy-button:active {
       top: 1px; }
 
@@ -1458,7 +1455,8 @@ ul {
   position: relative;
   cursor: pointer; }
   .form-submit:hover, .form-submit:active {
-    top: 1px; }
+    -webkit-box-shadow: 0 0 2px 1px #fff;
+            box-shadow: 0 0 2px 1px #fff; }
 
 .contact-info {
   -webkit-box-flex: 1;
