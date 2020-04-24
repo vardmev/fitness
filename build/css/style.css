@@ -780,12 +780,14 @@ ul {
   color: #102654; }
 
 .subscriptions {
+  background-color: #F8F9FC; }
+
+.subscriptions-wrapper {
   text-align: center;
-  background-color: #F8F9FC;
   padding: 120px 103px;
   position: relative;
   z-index: 1; }
-  .subscriptions .section-header {
+  .subscriptions-wrapper .section-header {
     margin-top: 0; }
 
 .tab-links {
@@ -1104,16 +1106,18 @@ ul {
     margin-bottom: 15px; }
 
 .advantages {
+  background-color: #F8F9FC; }
+
+.advantages-wrapper {
   text-align: center;
-  background-color: #F8F9FC;
   padding: 120px 164px;
   position: relative;
   z-index: 1; }
-  .advantages .section-header {
+  .advantages-wrapper .section-header {
     margin-top: 0; }
-  .advantages p {
+  .advantages-wrapper p {
     margin: 0; }
-  .advantages .advantages-wrapper {
+  .advantages-wrapper .advantages-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1122,39 +1126,39 @@ ul {
             justify-content: space-between;
     margin-top: 80px;
     text-align: left; }
-  .advantages .advantages-left-block,
-  .advantages .advantages-right-block {
+  .advantages-wrapper .advantages-left-block,
+  .advantages-wrapper .advantages-right-block {
     width: 340px;
     -ms-flex-negative: 0;
         flex-shrink: 0; }
-  .advantages .advantages-left-top,
-  .advantages .advantages-left-bottom,
-  .advantages .advantages-right-top,
-  .advantages .advantages-right-bottom {
+  .advantages-wrapper .advantages-left-top,
+  .advantages-wrapper .advantages-left-bottom,
+  .advantages-wrapper .advantages-right-top,
+  .advantages-wrapper .advantages-right-bottom {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-  .advantages .advantages-right-top {
+  .advantages-wrapper .advantages-right-top {
     padding-bottom: 80px;
     border-bottom: 2px solid rgba(209, 10, 66, 0.2); }
-  .advantages .advantages-left-top {
+  .advantages-wrapper .advantages-left-top {
     padding-bottom: 80px;
     padding-left: 25px;
     border-bottom: 2px solid rgba(209, 10, 66, 0.2); }
-  .advantages .advantages-right-bottom {
+  .advantages-wrapper .advantages-right-bottom {
     padding-top: 80px; }
-  .advantages .advantages-left-bottom {
+  .advantages-wrapper .advantages-left-bottom {
     padding-top: 80px;
     padding-left: 20px; }
-  .advantages .advantages-left-top-right,
-  .advantages .advantages-left-bottom-right,
-  .advantages .advantages-right-top-right,
-  .advantages .advantages-right-bottom-right {
+  .advantages-wrapper .advantages-left-top-right,
+  .advantages-wrapper .advantages-left-bottom-right,
+  .advantages-wrapper .advantages-right-top-right,
+  .advantages-wrapper .advantages-right-bottom-right {
     margin-left: 30px; }
-  .advantages .gradient-text {
+  .advantages-wrapper .gradient-text {
     font-family: "Roboto Condensed", sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -1167,12 +1171,12 @@ ul {
     /* Обрезаем фон по тексту */
     -webkit-text-fill-color: transparent;
     /* Прозрачный текст */ }
-  .advantages .unit-name {
+  .advantages-wrapper .unit-name {
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 300;
     font-size: 14px;
     color: #2E35AC; }
-  .advantages .advantages-name {
+  .advantages-wrapper .advantages-name {
     font-family: "Roboto Condensed", sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -1180,7 +1184,7 @@ ul {
     line-height: 80%;
     margin-bottom: 15px;
     color: #102654; }
-  .advantages .advantages-note {
+  .advantages-wrapper .advantages-note {
     font-family: "Roboto Condensed", sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -1379,10 +1383,15 @@ ul {
   margin: 0; }
 
 .contacts {
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #102654), color-stop(50%, #fff));
+  background: linear-gradient(to right, #102654 50%, #fff 50%);
+  border-top: 1px solid #74819C; }
+
+.contacts-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .contacts .section-header {
+  .contacts-wrapper .section-header {
     margin-top: 0;
     margin-bottom: 50px; }
 
@@ -1458,7 +1467,8 @@ ul {
   border-top: 1px solid #74819C;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 70px 159px 70px 120px; }
+  padding: 70px 159px 70px 120px;
+  background-color: #fff; }
 
 .contact-info-wrapper {
   display: -webkit-box;

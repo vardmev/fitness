@@ -280,8 +280,11 @@ ul {
 }
 
 .subscriptions {
-  text-align: center;
   background-color: #F8F9FC;
+}
+
+.subscriptions-wrapper {
+  text-align: center;
   padding: 120px 103px;
   position: relative;
   z-index: 1;
@@ -643,8 +646,11 @@ ul {
 }
 
 .advantages {
-  text-align: center;
   background-color: #F8F9FC;
+}
+
+.advantages-wrapper {
+  text-align: center;
   padding: 120px 164px;
   position: relative;
   z-index: 1;
@@ -657,7 +663,7 @@ ul {
     margin: 0;
   }
 
-  .advantages-wrapper {
+  .advantages-container {
     display: flex;
     justify-content: space-between;
     margin-top: 80px;
@@ -947,6 +953,12 @@ ul {
 }
 
 .contacts {
+  // background-color: #102654;
+  background: linear-gradient(to right, #102654 50%, #fff 50%);
+  border-top: 1px solid #74819C;
+}
+
+.contacts-wrapper {
   display: flex;
 
   .section-header {
@@ -1028,6 +1040,7 @@ ul {
   border-top: 1px solid #74819C;
   box-sizing: border-box;
   padding: 70px 159px 70px 120px;
+  background-color: #fff;
 }
 
 .contact-info-wrapper {
