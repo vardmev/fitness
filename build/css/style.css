@@ -668,15 +668,18 @@ ul {
     letter-spacing: 0.03em;
     text-align: right; }
   .header-wrapper .fitness-name {
+    margin-top: 12px;
+    margin-bottom: 48px;
+    position: relative;
+    text-align: right; }
+  .header-wrapper .fitness-caption {
     font-family: "Bebas Neue", Arial, sans-serif;
     font-size: 109px;
     line-height: 109px;
     font-weight: bold;
-    text-align: right;
+    display: inline;
     letter-spacing: 0.03em;
-    margin-top: 12px;
-    margin-bottom: 48px;
-    position: relative; }
+    vertical-align: baseline; }
   .header-wrapper .header-list {
     text-align: right;
     list-style: none;
