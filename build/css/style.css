@@ -868,13 +868,13 @@ ul {
   border: 7px solid transparent;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
-  .option.active, .option:hover {
+  .option:hover {
     position: relative;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     background-color: #fff;
     background-clip: padding-box; }
-    .option.active:before, .option:hover:before {
+    .option:hover:before {
       content: "";
       position: absolute;
       top: 0;
@@ -884,7 +884,7 @@ ul {
       z-index: -1;
       margin: -7px;
       background: linear-gradient(135deg, #D10A42, #00359F); }
-    .option.active .buy-button, .option:hover .buy-button {
+    .option:hover .buy-button {
       border: none;
       color: #fff;
       background: -webkit-gradient(linear, left top, right top, from(#D10A42), to(#00359F));
