@@ -1063,6 +1063,10 @@ ul {
   width: 1160px;
   padding: 0 40px;
   margin: 0 -40px; }
+  .coaches-swiper .swiper-button-prev {
+    left: 0; }
+  .coaches-swiper .swiper-button-next {
+    right: 0; }
 
 .coach-slide {
   position: relative;
@@ -1584,3 +1588,15 @@ ul {
     line-height: 16px; }
     .footer-nav .link:hover {
       text-decoration: underline; }
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-size: 102%; }
+
+.swiper-button-next.swiper-button-grey {
+  background-image: url("../img/swiper-next.svg"); }
+
+.swiper-button-prev.swiper-button-grey {
+  background-image: url("../img/swiper-next.svg");
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }

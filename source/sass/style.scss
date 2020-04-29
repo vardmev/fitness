@@ -596,6 +596,13 @@ ul {
   width: 1160px;
   padding: 0 40px;
   margin: 0 -40px;
+
+  .swiper-button-prev {
+    left: 0;
+  }
+  .swiper-button-next {
+    right: 0;
+  }
 }
 
 .coach-slide {
@@ -1162,4 +1169,18 @@ ul {
       text-decoration: underline;
     }
   }
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-size: 102%;
+}
+
+.swiper-button-next.swiper-button-grey {
+  background-image: url("../img/swiper-next.svg");
+}
+.swiper-button-prev.swiper-button-grey {
+  background-image: url("../img/swiper-next.svg");
+  transform: rotate(180deg);
+  // background-image: url("../img/swiper-prev.svg");
 }
