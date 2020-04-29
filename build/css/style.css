@@ -769,9 +769,24 @@ ul {
     padding-left: 65px; }
   .gym .gym-image--gym2 {
     position: absolute;
-    background-image: url("../img/play-button.png");
     bottom: 0;
     left: 0; }
+  .gym .gym-image-play-button-wrapper {
+    background: rgba(20, 54, 122, 0.5);
+    width: 364px;
+    height: 228px;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+  .gym .gym-image-play-button {
+    position: absolute;
+    bottom: 64px;
+    left: 132px; }
+    .gym .gym-image-play-button:hover {
+      border-radius: 50%;
+      -webkit-box-shadow: 0 0 1px 2px rgba(20, 54, 122, 0.5);
+              box-shadow: 0 0 1px 2px rgba(20, 54, 122, 0.5);
+      cursor: pointer; }
 
 .section-header {
   font-family: "Bebas Neue", Arial, sans-serif;
