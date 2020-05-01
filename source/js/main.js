@@ -49,3 +49,8 @@ var mySwiper = new Swiper ('.swiper-container.reviews-swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+// jQuery плагин для маски телефона
+$(function(){
+  $("input[type=tel]").mask("+7(999) 999-9999");
+});
