@@ -171,7 +171,7 @@ ul {
     list-style: none;
 
     position: absolute;
-    bottom: 35px;
+    top: 109px;
     right: 265px;
     margin: 0;
     padding: 0;
@@ -269,7 +269,7 @@ ul {
   }
   .gym-image--gym2 {
     position: absolute;
-    bottom: 0;
+    top: 287px;
     left: 0;
   }
   .gym-image-play-button-wrapper {
@@ -277,7 +277,7 @@ ul {
     width: 364px;
     height: 228px;
     position: absolute;
-    bottom: 0;
+    top: 287px;
     left: 0;
   }
   .gym-image-play-button {
@@ -318,7 +318,7 @@ ul {
 .tab-links {
   display: flex;
   justify-content: center;
-  margin-bottom: 39px;
+
 }
 .tab-link {
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
@@ -352,6 +352,7 @@ ul {
 
 .tab-content {
   justify-content: space-between;
+  flex-wrap: wrap;
   display: none;
 
   &.active {
@@ -391,6 +392,7 @@ ul {
 }
 .option {
   width: 360px;
+  margin-top: 40px;
   background-color: #ffffff;
   text-align: center;
   padding: 68px 0;
@@ -483,7 +485,6 @@ ul {
 
   .promo-text{
     width: 500px;
-    height: 500px;
     padding: 78px 78px;
     box-sizing: border-box;
     background-color: #ED0233;
@@ -527,6 +528,8 @@ ul {
     font-family: "Roboto Condensed", Arial, sans-serif;
     font-size: 18px;
     line-height: 150%;
+
+    margin-bottom: 20px;
   }
   .promo-date-wrapper {
     display: flex;
@@ -574,6 +577,13 @@ ul {
       top: 1px;
     }
   }
+}
+
+.promo-image {
+  background-color: #000047;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
 }
 
@@ -884,6 +894,16 @@ ul {
   font-size: 28px;
   margin-bottom: 10px;
 }
+.main-stock-note-wrapper {
+  max-height: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.secondary-stock-note-wrapper {
+  max-height: 90px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .stock-note {
   font-family: "Roboto Condensed", Arial, sans-serif;
   font-style: normal;
@@ -946,10 +966,14 @@ ul {
   width: 560px;
   padding: 0 75px;
   margin: 0 -75px;
+
+  .swiper-slide {
+    display: flex;
+  }
 }
+
 .review {
   width: 560px;
-  height: 242px;
   padding: 62px;
   box-sizing: border-box;
   background-color: #1C3374;
@@ -957,6 +981,7 @@ ul {
 
   display: flex;
   justify-content: space-between;
+  align-self: center;
 }
 .review-author-photo {
   border-radius: 50%;
@@ -1097,6 +1122,7 @@ ul {
 .link.contact-text {
   text-decoration: none;
   vertical-align: baseline;
+  display: block;
   &:hover {
     text-decoration: underline;
   }
@@ -1156,7 +1182,10 @@ ul {
 
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   .link {
+    margin-right: 15px;
+    margin-bottom: 10px;
     color: #fff;
     text-decoration: none;
     vertical-align: baseline;
