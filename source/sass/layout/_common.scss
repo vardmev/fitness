@@ -1,0 +1,107 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  height: 100%;
+  min-width: 1366px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/bebas-neue-regular.woff2") format("woff2"),
+       url("../fonts/bebas-neue-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/bebas-neue-bold.woff2") format("woff2"),
+       url("../fonts/bebas-neue-bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/roboto-condensed-regular.woff2") format("woff2"),
+       url("../fonts/roboto-condensed-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/roboto-condensed-light.woff2") format("woff2"),
+       url("../fonts/roboto-condensed-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/roboto-condensed-bold.woff2") format("woff2"),
+       url("../fonts/roboto-condensed-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.link:hover,
+.btn:hover {
+  cursor: pointer;
+}
+
+.container {
+  width: 1366px;
+  margin: 0 auto;
+}
+
+.section-header {
+  font-family: "Bebas Neue", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 49px;
+  margin-bottom: 20px;
+  color: #102654;
+}
+
+
+/* Swipper */
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-size: 102%;
+}
+
+.swiper-button-next.swiper-button-grey {
+  background-image: url("../img/swiper-next.svg");
+}
+.swiper-button-prev.swiper-button-grey {
+  background-image: url("../img/swiper-next.svg");
+  transform: rotate(180deg);
+  // background-image: url("../img/swiper-prev.svg");
+}

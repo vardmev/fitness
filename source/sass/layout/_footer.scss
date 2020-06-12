@@ -1,0 +1,59 @@
+/* Footer section */
+
+.footer {
+  flex: 0 0 auto;
+  background-color: #030A1A;
+}
+.footer-wrapper {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 40px 103px;
+
+  .social-links {
+    display: flex;
+    align-items: center;
+  }
+  .social-link {
+    margin-right: 25px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .footer-company-name {
+    font-family: "Bebas Neue", Arial, sans-serif;
+    font-size: 26px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+  }
+  .social-logo:hover {
+    opacity: 0.5;
+  }
+}
+
+.footer-nav {
+  flex: 0 0 431px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .link {
+    margin-right: 15px;
+    margin-bottom: 10px;
+    color: #fff;
+    text-decoration: none;
+    vertical-align: baseline;
+
+    font-family: "Roboto Condensed", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

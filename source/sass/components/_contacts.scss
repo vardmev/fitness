@@ -1,0 +1,137 @@
+/* Contacts section */
+
+.contacts {
+  background: linear-gradient(to right, #102654 50%, #fff 50%);
+  border-top: 1px solid #74819C;
+}
+
+.contacts-wrapper {
+  display: flex;
+
+  .section-header {
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+}
+
+.contact-form {
+  flex: 1 1 50%;
+  background-color: #102654;
+  box-sizing: border-box;
+  padding: 70px 170px 70px 103px;
+
+  .section-header {
+    color: #fff;
+  }
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-input {
+  flex: 0 0 190px;
+
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #fff;
+
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #74819C;
+  background-color: transparent;
+  padding-bottom: 5px;
+
+  &:hover {
+    border-bottom: 3px solid #74819C;
+    padding-bottom: 3px;
+  }
+
+  &::placeholder {
+    color: #fff;
+  }
+}
+
+.form-submit {
+  width: 100%;
+  border: 3px solid #FFFFFF;
+  padding: 15px 0;
+  margin-top: 30px;
+
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+
+  text-transform: uppercase;
+
+  background-color: transparent;
+
+  color: #FFFFFF;
+
+  position: relative;
+  cursor: pointer;
+  &:hover,
+  &:active {
+    box-shadow: 0 0 2px 1px #fff;
+  }
+}
+
+.contact-info {
+  flex: 1 1 50%;
+  border-top: 1px solid #74819C;
+  box-sizing: border-box;
+  padding: 70px 159px 70px 120px;
+  background-color: #fff;
+}
+
+.contact-info-wrapper {
+  display: flex;
+}
+
+.contact-header {
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+
+  color: #102654;
+  margin: 0;
+}
+
+.contact-text {
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: #102654;
+  margin: 0;
+}
+.link.contact-text {
+  text-decoration: none;
+  vertical-align: baseline;
+  display: block;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.contact-left {
+  padding-right: 60px;
+  border-right: 1px solid #74819C;
+}
+
+.contact-right {
+  padding-left: 60px;
+}
+
+.contact-address,
+.contact-phone {
+  margin-bottom: 25px;
+}

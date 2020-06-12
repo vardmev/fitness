@@ -1,0 +1,94 @@
+/* Coaches section */
+
+.coaches {
+  margin: 120px 103px;
+}
+
+.coaches-header {
+  font-family: "Bebas Neue", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 49px;
+
+  color: #102654;
+
+  text-align: left;
+}
+
+.coaches-swiper {
+  width: 1160px;
+  padding: 0 40px;
+  margin: 0 -40px;
+
+  .swiper-button-prev {
+    left: 0;
+  }
+  .swiper-button-next {
+    right: 0;
+  }
+}
+
+.coach-slide {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  p {
+    margin: 0;
+  }
+
+  li {
+    text-align: left;
+  }
+
+  &:hover {
+    .slide-coach-name {
+      display: none;
+    }
+    .slide-coach-info {
+      display: flex;
+    }
+  }
+
+  .slide-coach-name {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
+  }
+  .coach-name {
+    font-family: "Roboto Condensed", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150%;
+  }
+  .slide-coach-info {
+    display: none;
+  }
+
+  .coach-info {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 55px;
+    background-color: rgba(16, 38, 84, 0.89);
+  }
+  .coach-specialization {
+    font-family: "Roboto Condensed", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 150%;
+    color: #B6BDCC;
+
+    margin-bottom: 35px;
+  }
+  .achievement-item {
+    font-family: "Roboto Condensed", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 150%;
+
+    list-style-type: disc;
+    margin-bottom: 15px;
+  }
+}

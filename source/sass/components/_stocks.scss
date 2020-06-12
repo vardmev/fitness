@@ -1,0 +1,121 @@
+/* Stocks section */
+
+.stocks {
+  margin: 120px 103px;
+  p{
+    margin: 0;
+  }
+  .section-header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+.stocks-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-stock {
+  display: flex;
+  flex: 0 0 560px;
+}
+
+.main-stock-info {
+  padding: 40px 45px;
+  background-color: #ED0233;
+  position: relative;
+
+  p, a {
+    color: #fff;
+  }
+}
+
+.secondary-stocks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 7px;
+}
+.secondary-stock {
+  padding: 25px;
+  width: 546px;
+  height: 197px;
+
+  a,
+  p {
+    color: #1C3374;
+  }
+}
+.stock-header {
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+
+  margin-bottom: 20px;
+
+  span {
+    font-size: 70px;
+    vertical-align: baseline;
+  }
+}
+.stock-header-bigger {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.main-stock-note-wrapper {
+  max-height: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.secondary-stock-note-wrapper {
+  max-height: 90px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.stock-note {
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 140%;
+}
+.more-link {
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+
+  position: absolute;
+  bottom: 25px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.more-link-bigger {
+  font-size: 14px;
+  line-height: 16px;
+  bottom: 40px;
+}
+
+.gradient-border {
+  position: relative;
+  box-sizing: border-box;
+  background-color: #fff;
+  background-clip: padding-box;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -7px;
+    background: linear-gradient(135deg, #D10A42, #00359F);
+  }
+}

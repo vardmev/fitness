@@ -1,0 +1,151 @@
+/* Advatanges section */
+
+.advantages {
+  background-color: #F8F9FC;
+}
+
+.advantages-wrapper {
+  text-align: center;
+  padding: 120px 164px;
+  position: relative;
+  z-index: 1;
+
+  .section-header {
+    margin-top: 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .advantages-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+
+    text-align: left;
+
+  }
+
+  .advantages-left-block,
+  .advantages-right-block {
+    width: 340px;
+    flex-shrink: 0;
+  }
+
+  .advantages-left-top,
+  .advantages-left-bottom,
+  .advantages-right-top,
+  .advantages-right-bottom {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .advantages-right-top {
+    padding-bottom: 80px;
+    border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+  }
+
+  .advantages-left-top {
+    padding-bottom: 80px;
+    padding-left: 25px;
+    border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+  }
+
+  .advantages-right-bottom {
+    padding-top: 80px;
+  }
+
+  .advantages-left-bottom {
+    padding-top: 80px;
+    padding-left: 20px;
+  }
+
+  .advantages-left-top-right,
+  .advantages-left-bottom-right,
+  .advantages-right-top-right,
+  .advantages-right-bottom-right {
+    margin-left: 30px;
+  }
+
+  .gradient-text {
+    font-family: "Roboto Condensed", Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 71px;
+    line-height: 80%;
+
+    margin-bottom: 10px;
+
+    background: linear-gradient(120deg, #D10A42, #0041CA 60%); /* Градиент для текста */
+    -webkit-background-clip: text; /* Обрезаем фон по тексту */
+    -webkit-text-fill-color: transparent; /* Прозрачный текст */
+  }
+
+  .unit-name {
+    font-family: "Roboto Condensed", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #2E35AC;
+  }
+
+  .advantages-name {
+    font-family: "Roboto Condensed", Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 80%;
+
+    margin-bottom: 15px;
+
+    color: #102654;
+  }
+
+  .advantages-note  {
+    font-family: "Roboto Condensed", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 140%;
+
+    color: #102654;
+  }
+}
+
+.advantages-central-block {
+  background-color: #1C3374;
+  padding: 65px 34px;
+  text-align: center;
+  width: 240px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  margin: 0 60px;
+
+  .advantages-number {
+    font-family: "Roboto Condensed", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 74px;
+    line-height: 100%;
+    color: #fff;
+  }
+  .advantages-name {
+    font-family: "Roboto Condensed", Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 100%;
+    color: #fff;
+
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+  .advantages-note {
+    font-family: "Roboto Condensed", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    color: #fff;
+  }
+}
