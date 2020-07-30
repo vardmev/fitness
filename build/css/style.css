@@ -597,6 +597,10 @@ ul {
       -ms-flex: 1 0 auto;
           flex: 1 0 auto; }
 
+.content,
+.footer {
+  display: none; }
+
 .link:hover,
 .btn:hover {
   cursor: pointer; }
@@ -626,10 +630,23 @@ ul {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg); }
 
+@media (max-width: 1365px) {
+  body {
+    min-width: 768px; }
+  .container {
+    width: 768px; } }
+
+@media (max-width: 767px) {
+  body {
+    min-width: 320px; }
+  .container {
+    width: 320px; } }
+
 /* Header section */
 .header {
   background: url("../img/header-bg.jpg") no-repeat 50% 0;
-  background: conic-gradient(from 250deg at 16.03% 39.06%, #003D85, #B80027, #003D85); }
+  background: conic-gradient(from 250deg at 16.03% 39.06%, #003D85, #B80027, #003D85);
+  background: conic-gradient(from 139.4deg at 20.7% 35.74%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg); }
 
 .header-wrapper {
   padding: 30px 103px 50px;
@@ -707,7 +724,7 @@ ul {
     text-align: right;
     list-style: none;
     position: absolute;
-    top: 109px;
+    top: 119px;
     right: 265px;
     margin: 0;
     padding: 0; }
@@ -720,7 +737,7 @@ ul {
   .header-wrapper .buy-button {
     border: 4px solid #ffffff;
     width: 225px;
-    height: 55px;
+    padding: 20px 0;
     -ms-flex-item-align: end;
         align-self: flex-end;
     position: relative;
@@ -729,7 +746,6 @@ ul {
     font-family: "Roboto Condensed", Arial, sans-serif;
     font-weight: bold;
     font-size: 12px;
-    line-height: 56px;
     color: #ffffff;
     text-transform: uppercase;
     text-decoration: none;
@@ -764,6 +780,67 @@ ul {
     color: #fff; }
     .header-wrapper .social-link:hover {
       text-decoration: underline; }
+
+@media (max-width: 1365px) {
+  .header {
+    background: conic-gradient(from 139.4deg at 20.7% 35.74%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg); }
+  .header-wrapper {
+    padding: 40px 45px 80px; }
+    .header-wrapper .header-company-name,
+    .header-wrapper .header-phone {
+      font-size: 24px;
+      line-height: 24px; }
+    .header-wrapper .header-image {
+      width: 324px;
+      height: 390px; }
+    .header-wrapper .city-name {
+      font-size: 34px;
+      line-height: 34px; }
+    .header-wrapper .fitness-caption {
+      font-size: 86px;
+      line-height: 86px; }
+    .header-wrapper .social-links {
+      display: none; }
+    .header-wrapper .header-main {
+      margin-top: 25px; }
+    .header-wrapper .header-image {
+      margin: 0 0 0 30px; }
+    .header-wrapper .header-list {
+      top: 90px;
+      right: 210px; }
+    .header-wrapper .buy-button {
+      width: 178px; } }
+
+@media (max-width: 767px) {
+  .header {
+    background: conic-gradient(from 171.43deg at 35.31% 34.22%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg); }
+  .header-wrapper {
+    padding: 20px 15px 80px; }
+    .header-wrapper .header-company-name,
+    .header-wrapper .header-phone {
+      font-size: 20px;
+      line-height: 20px; }
+    .header-wrapper .header-main {
+      margin-top: 80px; }
+    .header-wrapper .header-image {
+      display: none; }
+    .header-wrapper .header-main-info {
+      padding: 0; }
+    .header-wrapper .city-name {
+      font-size: 28px;
+      line-height: 28px; }
+    .header-wrapper .fitness-caption {
+      font-size: 78px;
+      line-height: 78px; }
+    .header-wrapper .header-main-info {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 320px;
+              flex: 0 0 320px; }
+    .header-wrapper .header-list {
+      top: 80px;
+      right: 180px; }
+    .header-wrapper .buy-button {
+      width: 282px; } }
 
 /* Footer section */
 .footer {

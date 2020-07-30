@@ -70,6 +70,12 @@ ul {
   flex: 1 0 auto;
 }
 
+
+.content,
+.footer {
+  display: none;
+}
+
 .link:hover,
 .btn:hover {
   cursor: pointer;
@@ -104,4 +110,21 @@ ul {
   background-image: url("../img/swiper-next.svg");
   transform: rotate(180deg);
   // background-image: url("../img/swiper-prev.svg");
+}
+
+@media (max-width: 1365px) {
+  body {
+    min-width: 768px;
+  }
+  .container {
+    width: 768px;
+  }
+}
+@media (max-width: 767px) {
+  body {
+    min-width: 320px;
+  }
+  .container {
+    width: 320px;
+  }
 }
